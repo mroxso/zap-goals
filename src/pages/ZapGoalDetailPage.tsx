@@ -206,11 +206,14 @@ export function ZapGoalDetailPage() {
               <Separator />
 
               {!progress.isClosed && (
-                <ZapButton
-                  target={goal.event}
-                  className="w-full"
-                  showCount={false}
-                />
+                <Button
+                  className='w-full'>
+                  <ZapButton
+                    target={goal.event}
+                    className="w-full"
+                    showCount={false}
+                  />
+                </Button>
               )}
 
               <Button
