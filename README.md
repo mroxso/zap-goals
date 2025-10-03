@@ -1,8 +1,8 @@
-# MKStack
+# Zap Goals
 
-**The Complete Framework for Building Nostr Clients with AI**
+**A Nostr-based fundraising platform for creators and projects.**
 
-MKStack is an AI-powered framework for building Nostr applications with React 18.x, TailwindCSS 3.x, Vite, shadcn/ui, and Nostrify. Build powerful Nostr applications with AI-first development - from social feeds to private messaging, MKStack provides everything you need to create decentralized apps on the Nostr protocol.
+Zap Goals is a decentralized fundraising application built on the Nostr protocol. It allows anyone to create and share fundraising goals, and receive support from the community through Bitcoin Lightning "zaps". This project was built with MKStack
 
 ## 🚀 Quick Start
 
