@@ -5,6 +5,7 @@ import { useCurrentUser } from '@/hooks/useCurrentUser';
 import { useAuthor } from '@/hooks/useAuthor';
 import { Zap } from 'lucide-react';
 import type { Event } from 'nostr-tools';
+import { Button } from './ui/button';
 
 interface ZapButtonProps {
   target: Event;
@@ -42,16 +43,18 @@ export function ZapButton({
   return (
     <ZapDialog target={target}>
       <div className={`flex items-center gap-1 ${className}`}>
-        <Zap className="h-4 w-4" />
-        <span className="text-xs">
-          {showLoading ? (
-            '...'
-          ) : showCount && totalSats > 0 ? (
-            `${totalSats.toLocaleString()}`
-          ) : (
-            'Zap'
-          )}
-        </span>
+        <Button className={`${className}`}>
+          <Zap className="h-4 w-4" />
+          <span className="text-xs">
+            {showLoading ? (
+              '...'
+            ) : showCount && totalSats > 0 ? (
+              `${totalSats.toLocaleString()}`
+            ) : (
+              'Zap'
+            )}
+          </span>
+        </Button>
       </div>
     </ZapDialog>
   );
