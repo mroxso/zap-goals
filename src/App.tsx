@@ -12,6 +12,7 @@ import { NostrLoginProvider } from '@nostrify/react/login';
 import { AppProvider } from '@/components/AppProvider';
 import { NWCProvider } from '@/contexts/NWCContext';
 import { AppConfig } from '@/contexts/AppContext';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import AppRouter from './AppRouter';
 
 const head = createHead({
@@ -52,6 +53,7 @@ export function App() {
               <NWCProvider>
                 <TooltipProvider>
                   <Toaster />
+                  <ThemeToggle />
                   <Suspense>
                     <AppRouter />
                   </Suspense>
